@@ -47,7 +47,7 @@ body {
   outline: none;
   background: #23241e;
   min-width: 100px;
-  white-space: pre;
+  white-space: pre-wrap;
   color: #b2b2b2;
 }
 .output-command {
