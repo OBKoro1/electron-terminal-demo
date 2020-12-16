@@ -102,7 +102,7 @@
 
             ls.stderr.on('data', (data) => {
               this.commandMsg.push(`err: ${data}`)
-              console.error(`stderr: ${data}`)
+              console.log(`stderr: ${data}`)
             })
             ls.on('close', this.closeCommandAction)
           },
