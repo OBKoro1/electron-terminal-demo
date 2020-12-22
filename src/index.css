@@ -15,7 +15,7 @@ body {
   background: #23241e;
   color: #929292;
   flex: 1;
-  padding: 20px 20px 20px 10px;
+  padding: 10px 20px 0 10px;
 }
 .command-action {
   font-size: 16px;
@@ -51,6 +51,10 @@ body {
   color: #b2b2b2;
 }
 .output-command {
-  margin: 20px 10px 20px 0;
+  margin: 10px 10px 10px 0;
   white-space: pre-wrap;
+}
+
+.command-action-editor {
+  padding: 10px 0 20px 0;
 }

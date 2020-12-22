@@ -28,7 +28,7 @@
           </div>
           <div class="output-command">{{ item.commandMsg }}</div>
         </div>
-        <div class="command-action" @mouseup="timeoutFocusInput">
+        <div class="command-action command-action-editor" @mouseup="timeoutFocusInput">
           <i class="el-icon-right command-action-icon"></i>
           <span class="command-action-path">{{ path }} $</span>
           <span
@@ -175,10 +175,11 @@
           onDivInput(e) {
             this.command = e.target.textContent
           },
+          // 点击div 聚焦输入
           timeoutFocusInput() {
             setTimeout(() => {
               this.focusInput()
-            }, 1500)
+            }, 200)
           },
           focusInput() {
             this.inputDom.focus() //解决ff不获取焦点无法定位问题
