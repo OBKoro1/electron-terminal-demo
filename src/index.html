@@ -106,7 +106,7 @@
           // 状态或者错误 数据同步
           stderrMsgHandle(data) {
             console.log(`stderr: ${data}`)
-            this.commandMsg.push(`${msg}${data}`)
+            this.commandMsg.push(`stderr: ${data}`)
           },
           // cd命令处理
           cdCommand(command) {
