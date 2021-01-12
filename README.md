@@ -8,7 +8,7 @@
 
 很多开源的命令行终端都是使用`Electron`来开发的，本文将从零开始手把手的教大家用`Electron`写一个命令行终端。
 
-作为一个完整的实战项目示例，该终端demo也将集成到`Electron`开源学习项目[electron-playground](https://github.com/tal-tech/electron-playground)中，目前这个项目拥有700+ Star⭐️，它最大的特点是所见即所得的演示`Electron`的各种特性，帮助大家快速学习、上手`Electron`。
+作为一个完整的实战项目示例，该终端demo也将集成到`Electron`开源学习项目[electron-playground](https://github.com/tal-tech/electron-playground)中，目前这个项目拥有800+ Star⭐️，它最大的特点是所见即所得的演示`Electron`的各种特性，帮助大家快速学习、上手`Electron`。
 
 大家跟着本文一起来试试Electron吧~
 
