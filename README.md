@@ -22,10 +22,6 @@
 
 ![](https://raw.githubusercontent.com/OBKoro1/articleImg_src/master/2021/electron-terminal/electron-terminal-git.gif)
 
-### 项目地址
-
-开源地址: [electron-terminal-demo](https://github.com/OBKoro1/electron-terminal-demo)
-
 ### 启动与调试
 
 **安装**
@@ -50,3 +46,13 @@ npm run start
 
 [从零开始带你写一个运行命令行的终端[手把手教学]](http://obkoro1.com/web_accumulate/accumulate/electron/electron-terminal-demo.html)
 
+
+项目idea诞生于我们团队开源的另一个开源项目：[electron-playground](https://github.com/tal-tech/electron-playground), 目的是为了让小伙伴学习`electron`实战项目。
+
+electron-playground是用来帮助前端小伙伴们更好、更快的学习和理解前端桌面端技术Electron, 尽量少走弯路。
+
+它通过如下方式让我们快速学习electron。
+
+1. 带有gif示例和可操作的demo的教程文章。
+2. 系统性的整理了Electron相关的api和功能。
+3. 搭配演练场，自己动手尝试electron的各种特性。
