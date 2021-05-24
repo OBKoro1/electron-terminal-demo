@@ -9,6 +9,7 @@ function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true, // 页面直接使用node的能力 用于引入node模块 执行命令
+      contextIsolation: false, //electron更改了api，不加这个只加nodeIntegration用不了require
     },
   })
   debugger
