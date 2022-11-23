@@ -6,11 +6,8 @@
     <title>极简electron终端</title>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+      href="../node_modules/element-plus/dist/index.css"
     />
-    <script src="https://unpkg.com/vue"></script>
-    <!-- 引入element -->
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./index.css" />
   </head>
@@ -55,14 +52,16 @@
       </div>
     </div>
 
-    <script>
+    <script type="module">
+      const { createApp } = require('Vue')
+      const { ElementPlus } = require('element-plus')
       const { ipcRenderer } = require('electron')
       const { spawn } = require('child_process')
       const path = require('path')
 
-      var app = new Vue({
-        el: '#app',
-        data: {
+      var app = createApp({
+        data() {
+          return {
           path: '', // 命令行目录
           command: '', // 用户输入命令
           handleCommand: '', // 经过处理的用户命令 比如清除首尾空格、添加获取路径的命令
@@ -72,6 +71,7 @@
           action: false, // 是否正在执行命令
           inputDom: null, // 输入框dom
           addPath: '', // 不同系统 获取路径的命令 mac是pwd window是chdir
+        }
         },
         mounted() {
           this.addGetPath()
@@ -215,6 +215,8 @@
           },
         },
       })
+      app.use(ElementPlus)
+      app.mount('#app')
 
       // 获取操作系统信息
       function getOsInfo() {
